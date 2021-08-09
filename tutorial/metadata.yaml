@@ -1,0 +1,56 @@
+---
+general:
+  experiment_title: Excited-state dynamics of WSe2 in the Valence Band and Core-Levels
+  experiment_location: Hamburg, Germany
+  experiment_start_date: {value: 2018-04-23T00:00:00}
+  experiment_end_date: {value: 2018-04-23T00:00:00}
+  experiment_summary: Charachterization of Td-MoTe2 electronic structure evolution with soft X-ray probe and NIR pump through the Lifshitz transition of the Fermi surface.
+  experiment_institution: Fritz Haber Institute - Max Planck Society
+  experiment_facility: Time Resolved ARPES
+  experiment_laboratory: Clean Room 4
+  entry_title: Valence Band Dynamics - 1030 nm linear p-polarized pump, 0.6 mJ/cm2 absorbed fluence
+  entry_identifier: Run 0005
+---
+user:
+  name: Samuel Beaulieu
+  role: Principal Invstigator
+  affiliation: Fritz Haber Institute of the Max Planck Society
+  address: Faradayweg 4-6, 14195 Berlin
+  email: beaulieu@fhi-berlin.mpg.de
+---
+instrument:
+  instrument_name: TR-ARPES @ FHI
+  instrument_temporal_resolution: {value: 140, unit: fs}
+  instrument_spatial_resolution: {value: 10, unit: um}
+  instrument_energy_resolution: {value: 110, unit: meV}
+  instrument_description: Time-of-flight momentum microscope equipped delay line detector, at the endstation of the high rep-rate HHG source at FHI
+  source:
+    name: HHG @ TR-ARPES @ FHI
+  beam_probe_0:
+    distance: {value: 0, unit: cm}
+    pulse_energy: {value: 0.3, unit: fJ}
+---
+sample:
+  name: Td-MoTe2
+  thickness: {value: 0.5, unit: mm}
+---
+process:
+  distortion:
+    applied: {value: False}
+  calibration_k:
+    applied: {value: True}
+    x_scaling: {value: 0.043}
+    x_offset: {value: -1.0535}
+    y_scaling: {value: 0.043}
+    x_offset: {value: -1.0535}
+  calculated_kx: {value: axes/kx, name: k_x, unit: 1/Å}
+  calculated_ky: {value: axes/kx, name: k_y, unit: 1/Å}
+  calculated_E: {value: axes/E, name: Energy, unit: eV}
+  data_vol: {value: binned/V, name: Photoemission intensity, unit: counts}
+  
+---
+data:
+    kx: {value: axes/kx, name: k_x, unit: 1/Å}
+    ky: {value: axes/ky, name: k_y, unit: 1/Å}
+    E: {value: axes/E, name: Energy, unit: eV}
+    V: {value: binned/V, name: Photoemission intensity, unit: counts}
