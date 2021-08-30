@@ -1,0 +1,10 @@
+name: NexusFileConvertor
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - h5py
+  - nexusformat
+  - pyyaml
+  - nb_conda

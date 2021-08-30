@@ -44,13 +44,14 @@ process:
     y_scaling: {value: 0.043}
     x_offset: {value: -1.0535}
   calculated_kx: {value: axes/kx, name: k_x, unit: 1/Å}
-  calculated_ky: {value: axes/kx, name: k_y, unit: 1/Å}
+  calculated_ky: {value: axes/ky, name: k_y, unit: 1/Å}
   calculated_E: {value: axes/E, name: Energy, unit: eV}
-  data_vol: {value: binned/V, name: Photoemission intensity, unit: counts}
-  
+  calculated_delay: {value: axes/delay, name: Delay, unit: mm}
+  data_vol: {value: binned/binned, name: Photoemission intensity, unit: counts}
 ---
 data:
-    kx: {value: axes/kx, name: k_x, unit: 1/Å}
-    ky: {value: axes/ky, name: k_y, unit: 1/Å}
-    E: {value: axes/E, name: Energy, unit: eV}
-    V: {value: binned/V, name: Photoemission intensity, unit: counts}
+  kx: {value: axes/kx, name: k_x, unit: 1/Å}
+  ky: {value: axes/ky, name: k_y, unit: 1/Å}
+  E: {value: axes/E, name: Energy, unit: eV}
+  delay: {value: axes/delay, name: Delay, unit: mm}
+  V: {value: binned/binned, name: Photoemission intensity, unit: counts}
